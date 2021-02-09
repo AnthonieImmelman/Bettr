@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1> Results </h1>
+	<table>
+	<tr>
+		<th> Title </th>
+		<th> Tags </th>
+		<th> Date </th>
+		<th> Content </th>
+
+	</tr>
+	{% for x in range(count) %}
+	<tr>
+		<td> {{ result1[x] }} </td>
+		<td> {{ result2[x] }} </td>
+		<td> {{ result3[x] }} </td>
+                <td> {{ result4[x] }} </td>
+	</tr>
+	{% endfor %}
+	</table>
+{% endblock content %}

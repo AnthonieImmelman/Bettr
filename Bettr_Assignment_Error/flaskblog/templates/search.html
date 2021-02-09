@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1> Search for Post </h1>
+	
+	<form action= {{url_for('search_result') }} method='post'>
+                <input type= 'text' name = "title" placeholder="Post title"> <br> <br>
+		<input type= 'text' name = "tags" placeholder="Tags used in post"> <br> <br>
+                <input type= 'date' name = "date" > <br> <br>
+		<input type= 'submit' placeholder="Search">
+
+{% endblock content %}
